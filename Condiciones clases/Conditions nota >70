@@ -1,0 +1,12 @@
+// 1. Si la nota >=70
+    // Aprobò el examen
+//2. Si la nota es < 70
+    //REprobò el examen
+    
+    let nota = 75;
+
+    if (nota >= 70){
+        console.log("aprobò");
+    } else{
+        console.log("reprobò");
+    }
