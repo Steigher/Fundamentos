@@ -3,16 +3,16 @@ let resultado = "Aprobado";
 let resultadoBoleana = false;
 const nombre = "Yeison";
 
-if(nota >= 70) {
-	console.log("Aprobado");
-} else if(nota >= 30) {
-	console.log("No perdio, pero paso bajito");
+if (nota >= 70) {
+    console.log("Aprobado");
+} else if (nota >= 30) {
+    console.log("No perdio, pero paso bajito");
 } else {
-	console.log("Reprobo");
+    console.log("Reprobo");
 }
 
-if(nota == 40) {
-	console.log("Saco 40");
+if (nota == 40) {
+    console.log("Saco 40");
 }
 
 //Operador del igual
@@ -26,9 +26,9 @@ let condition1 = "leche";
 let condition2 = "cereal";
 let condition3 = "chocolate";
 
-if (condition1 && condition2 && condition3){
+if (condition1 && condition2 && condition3) {
     console.log("Tomar leche y cereal en un plato")
-} else if (condition1){
+} else if (condition1) {
     console.log("Tomar vaso de leche")
 }
 
@@ -40,9 +40,9 @@ else {
 let condition11 = "leche";
 let condition22 = "cereal";
 
-if(condition11 == "Leche" || condition22 == "Cereal"){
+if (condition11 == "Leche" || condition22 == "Cereal") {
     console.log("Hay alguno de los dos");
-} else if(condition11 != "leche" && condition22 != "cereal"){
+} else if (condition11 != "leche" && condition22 != "cereal") {
     console.log("No hay leche");
 }
 
@@ -57,19 +57,19 @@ let sileche = true;
 let sicereal = true;
 let siavena = true;
 
-if (sileche && sicereal){
+if (sileche && sicereal) {
     console.log("Servirme y comer");
-    else if(sicereal){
-        if (sileche)
-            console.log("servirme y comer");
-        }    
-}else if (sileche){
-    if(siavena)
-        console.log("Comer leche y avena");
-    else{
-        console.log("Tomar leche");
-    }
-}else if (siavena){
-    console.log("comer avena") {
-    console.log("ir a hacer mercado");
+    console.log("servirme y comer");
 }
+else if (sileche) {
+    if (sileche)
+        if (siavena)
+            console.log("Comer leche y avena");
+        else {
+            console.log("Tomar leche");
+        }
+} else if (siavena) {
+    console.log("comer avena")
+} else if (sicereal) {
+}
+console.log("ir a hacer mercado");

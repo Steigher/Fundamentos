@@ -12,4 +12,21 @@ sirve para enlazar nuestro proyecto de vsc al github
 
 git push origin main
 para subir el codigo a GIT
+
+3 pasos siempre par actualiza el codigo en github
+
+git add . 
+git commit -m "nombre del archivo"
+git push origin main
+*/
+
+/* BUENAS PRACTICAS
+
+feature = Es una nueva funcionalidad
+Fix = Errores corregidos
+Style = cambios de diseño
+Refactor = Ajuste de funcionalidad
+Chore = Ajustes a archivos de configuraciòn (.gitignore)
+doc = ajuste de documentacion (actualizaciòn en el README)e
+
 */
