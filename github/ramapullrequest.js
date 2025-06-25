@@ -6,4 +6,5 @@ para cambiar de rama = git checkout "nombre de la rama" (ej: git checkout main )
 para mezclar las rama, 1. ubicarse en la carpeta principal, 2. git merge "nombre de la rama" (git merge poo)
 
 git status = para revisar que no se ha cargado
+Para eliminar una rama = git branch -D "nombre de la rama" (git branch -D poo)
 */
