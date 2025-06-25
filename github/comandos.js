@@ -16,7 +16,7 @@ para subir el codigo a GIT
 3 pasos siempre par actualiza el codigo en github
 
 git add . 
-git commit -m "nombre del archivo"
+git commit -m "nombre del archivo" (git commit -m "comandos")
 git push origin main
 */
 
