@@ -11,15 +11,24 @@ ejemplo: console.log(encontrarsolitario([4, 1, 2, 1, 2])).  ;/ 4
 const numeros = [4, 1, 2, 1, 2]
 
 for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i])
+   // console.log(numeros[i])
     for (let j = i + 1; j < numeros.length; j++) {
-        console.log(numeros[i])
-        console.log(numeros[j])
-        console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
+        //console.log(numeros[i])
+        //console.log(numeros[j])
+        //console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
         if (numeros[i] === numeros[j]) {
-            console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
+          //  console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
         } else {
-            console.log("Nada")
+            //console.log("Nada")
         }
     }
+}
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i])
+    if (numeros[i] === 1){
+
+    }
+
+
 }
