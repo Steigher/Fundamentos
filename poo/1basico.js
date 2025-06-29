@@ -1,7 +1,7 @@
 console.log("Hola mundo!")
 
-/*
-Personaje {
+
+const personaje = {
     nombre: "Gandalf",
     skin: "superman",
     vida: 100,
@@ -10,15 +10,13 @@ Personaje {
     magia: 30,
     habilidades: ["luz", "fuego", "teletransportar"],
     inventario: [
-        {nombre: "pocion", cantidad: 3}
-        {nombre: "espada", cantidad: 1}
-        {nombre: "escudo", cantidad: 1}
-    ]
-
-
-    //METODOS 
-    atacar: function (objetivo) {
-    console.log (`${this.nombre} ataca a ${this.objet})
+        {nombre: "pocion", cantidad: 3},
+        {nombre: "espada", cantidad: 1},
+        {nombre: "escudo", cantidad: 1},
+    ],
+   // METODOS 
+    atacar: function() {
+    console.log (`${this.nombre} ataca con magia, daño magico: ${this.magia} `)
     }
 }
-*/
+personaje.atacar()
