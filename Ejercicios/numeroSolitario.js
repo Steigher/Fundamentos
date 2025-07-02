@@ -8,27 +8,40 @@ ejemplo: console.log(encontrarsolitario([4, 1, 2, 1, 2])).  ;/ 4
 // verificar si uno es igual al otro
 // si hay uno que no es igual retornar el numero
 
-const numeros = [4, 1, 2, 1, 2]
+const numeros = [4, 1, 2, 1, 2, 4, 6]
+const ar = []
+//tomo el primer numero, corto el resto dle array y comparo el primer numero si està dentro del array cortado
 
 for (let i = 0; i < numeros.length; i++) {
-   // console.log(numeros[i])
-    for (let j = i + 1; j < numeros.length; j++) {
-        //console.log(numeros[i])
-        //console.log(numeros[j])
-        //console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
-        if (numeros[i] === numeros[j]) {
-          //  console.log(`Comparando ${numeros[i]} con ${numeros[j]}`);
-        } else {
-            //console.log("Nada")
-        }
+    const numeroAComparar = numeros[i]
+    console.log(numeroAComparar)
+    const corteAdelante = numeros.slice(i + 1)
+    const corteAtras = numeros.slice(0, i)
+    console.log(corteAdelante);
+    console.log(corteAtras);
+
+    const numeroComparadoAdelante = corteAdelante.includes(numeroAComparar)
+    console.log(numeroComparadoAdelante)
+    const numeroComparadoAtras = corteAtras.includes(numeroAComparar)
+    console.log(numeroComparadoAtras);
+
+    if (numeroComparadoAdelante !== true && (numeroComparadoAtras !== true)) {
+        console.log(numeroAComparar)
     }
 }
 
-for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i])
-    if (numeros[i] === 1){
 
+function verificarNumeroSolitario(numeros) {
+   for (let i = 0; i < numeros.length; i++) {
+    const numeroAComparar = numeros[i]
+    const corteAdelante = numeros.slice(i + 1)
+    const corteAtras = numeros.slice(0, i)
+    const numeroComparadoAdelante = corteAdelante.includes(numeroAComparar)
+    const numeroComparadoAtras = corteAtras.includes(numeroAComparar)
+    
+    if (numeroComparadoAdelante !== true && (numeroComparadoAtras !== true)) {
+        return numeroAComparar
     }
-
-
+} 
 }
+console.log(verificarNumeroSolitario(numeros));
