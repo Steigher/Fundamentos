@@ -16,7 +16,7 @@ class Coche {
     }
     acelerar() {
         const cocheAcelerado = coches.find((element) => element.marca === this.marca)
-        console.log(cocheAcelerado.velocidad)
+        //console.log(cocheAcelerado.velocidad)
         if (cocheAcelerado.marca === this.marca) {
             this.velocidadActual += cocheAcelerado.velocidad
         }
@@ -37,7 +37,9 @@ BMW.acelerar()
 BMW.acelerar()
 BMW.acelerar()
 Ferrari.acelerar()
+Ferrari.frenar()
 Ferrari.acelerar()
+Chevrolet.acelerar()
 
 
 

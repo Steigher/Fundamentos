@@ -3,19 +3,21 @@ ejemplo:
 console.log(esPalindromoTolerante("abcba")) // true(se puede eliminar c)
 */
 const letras = "abcba"
-const palindromo = "anita lava la tina"
+const palindromo = "anitalavalatina"
 function esPalindromoTolerante(letras) {
-    /*console.log(letras.length)
-    console.log(letras[0]);
-    console.log(letras[4]);*/
+    let resultado = true
     for (let i = 0; i < letras.length; i++) {
         const longitudLetras = letras.length
-        // console.log(letras[i], letras[longitudLetras - i - 1]);
         if (letras[i] === letras[longitudLetras - i - 1]) {
-            return true
+            console.log(letras[i], letras[longitudLetras - i - 1]);
+            resultado = true
+        } else {
+            resultado = false
         }
-        return false
-    }
-
+        console.log(resultado)
+        if (resultado === false) {
+            return false
+        }
+    } return resultado
 }
 console.log(esPalindromoTolerante(palindromo));
