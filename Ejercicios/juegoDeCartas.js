@@ -14,9 +14,9 @@ function jugar21(cartas) {
     console.log(sumaCartas);
     */
     for (let i = 0; i < cartas.length; i++) {
-        console.log(cartas[i]);
+       // console.log(cartas[i]);
         sumaCartas += cartas[i]
-        console.log(sumaCartas);
+       // console.log(sumaCartas);
     }
     if (sumaCartas === 21) {
         return "Ganas"
@@ -29,5 +29,5 @@ function jugar21(cartas) {
 }
 
 console.log(jugar21([10, 5, 6]));
-console.log(jugar21([10, 11, 2]));
+console.log(jugar21([10, 11, 1]));
 console.log(jugar21([10, 10, 0]));
